@@ -1,52 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joy's house!</title>
-    <meta name="description" content="Joy's album and history">
-    <meta name="author" content="Joy's father">
-    <link rel="icon" type="image/png" href="imgs/favicon.png">
-    <script src="https://kit.fontawesome.com/6f6f082ac5.js" crossorigin="anonymous"></script> 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sacramento&display=swap" rel="stylesheet">  
-<!-- font-family: 'Open Sans', sans-serif;
+    <meta name="description" content="Joy's album and history" />
+    <meta name="author" content="Joy's father" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/6f6f082ac5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Open Sans', sans-serif;
 font-family: 'Sacramento', cursive; -->
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-<!-- 마지막에 defer 써야하는데 html파일이 pursuing 되는동안 javascript 파일을 동시에 다운받아서 다만 html이 pursuing이 다 완료가 된 다음에 자바 스크립트 파일을 실행하기 때문에 defer가 좋은 옵션임 -->
-<script src="main.js" defer></script>
-
-</head>
-<body>
+    <!-- 마지막에 defer 써야하는데 html파일이 pursuing 되는동안 javascript 파일을 동시에 다운받아서 다만 html이 pursuing이 다 완료가 된 다음에 자바 스크립트 파일을 실행하기 때문에 defer가 좋은 옵션임 -->
+    <script src="main.js" defer></script>
+  </head>
+  <body>
     <!-- Navbar -->
     <nav id="navbar">
-        <div class="navbar__logo">
-            <i class="fas fa-paw"></i>
-            <a href="#">Joy</a>
-        </div>
-        
-            <ul class="navbar__menu">
-                <li class="navbar__menu__item">Home</li>
-                <li class="navbar__menu__item">About</li>
-                <li class="navbar__menu__item">Skills</li>
-                <li class="navbar__menu__item">Emotion</li>
-                <li class="navbar__menu__item">Memo</li>
-                <li class="navbar__menu__item">Contact</li>
-            </ul>
+      <div class="navbar__logo">
+        <i class="fas fa-paw"></i>
+        <a href="#">Joy</a>
+      </div>
 
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item">Home</li>
+        <li class="navbar__menu__item">About</li>
+        <li class="navbar__menu__item">Skills</li>
+        <li class="navbar__menu__item">Emotion</li>
+        <li class="navbar__menu__item">Memo</li>
+        <li class="navbar__menu__item">Contact</li>
+      </ul>
     </nav>
 
+    <!-- Home -->
     <section id="home">
-        <img src="imgs/joycircle.png" alt="Joy's face" class="home__avatar"> <!-- img.home__avatar-->
-        <h1 class="home__title">Hello, <br> I'm Joy</h1> <!--h1.home__title-->
-        <h2 class="home__description">My name is Joy. My father is Jeunghak. I live in Korea. I am the best dog in the world.</h2> <!--h2.home__description-->
-        <button class="home__contact">Contact Me</button> <!--button.home__contact-->
+      <img src="imgs/joycircle.png" alt="Joy's face" class="home__avatar" />
+      <!-- img.home__avatar-->
+      <h1 class="home__title">
+        Hello, <br />
+        I'm Joy
+      </h1>
+      <!--h1.home__title-->
+      <h2 class="home__description">
+        My name is Joy. My father is Jeunghak. I live in Korea. I am the best
+        dog in the world.
+      </h2>
+      <!--h2.home__description-->
+      <button class="home__contact">Contact Me</button>
+      <!--button.home__contact-->
     </section>
 
     <!-- About -->
     <section id="about">
+      <h1>About Joy</h1>
+      <p>
+        안녕!! 나는 조이야!! 엄마아빠가 속초갔다 올라오는길에 나를 분양했어!
+        원래 이름은 코코였어 그리고 사실 나 콩시츄야 근데 지금 6키로야! 성견이
+        되서도 3.5키로가 맥시멈이라고했는데! 내가 너무 많이 먹어서 이렇게
+        커버렸어!! 아빠가그러는데 새끼떄 내가 밥먹을때 접시에 코박고 밥먹었대
+        하도 열정적으로 먹어서 코박고 먹다가 물구나무서기해서 돌아간적도 있대!!
+        엄청나지? 그러니까 부모님이 키작고 내가 어렸을때 키작다고 난 커서도
+        작을꺼야라는 생각하지마 날보라고 콩시츄라고 내가!! 내가 콩시츄라고! 근데
+        지금 누가날 콩시츄로 보겠어!!! 6키로야 나 6키로!!비만이야 좀뺴야되이제..
+      </p>
 
+      <div class="about__majors">
+        <!--.about__major-->
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-bone"></i>
+          </div>
+          <div class="major__title">Food Lover</div>
+          <div class="major__description">
+            I eat everything but please do not give me human food <br />
+            I also like vegi
+          </div>
+        </div>
+
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-paw"></i>
+          </div>
+          <div class="major__title">Like to excercise</div>
+          <div class="major__description">
+            I like to play hide&seek and play football<br />
+            I like to run really fast
+          </div>
+        </div>
+
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-playstation"></i>
+          </div>
+          <div class="major__title">Food Lover</div>
+          <div class="major__description">
+            I eat everything but please do not give me human food <br />
+            I also like vegi
+          </div>
+        </div>
+      </div>
+
+      <div class="about__history">
+        <div class="history">
+          <img src="imgs/joycoco.PNG" alt="coco" class="logo" />
+          <p class="important__dateDescription">조이가 태어난날!</p>
+          <p class="important__date">2019 Sept - unil now</p>
+        </div>
+        <div class="history"></div>
+      </div>
     </section>
 
     <!-- Skills -->
@@ -60,7 +130,5 @@ font-family: 'Sacramento', cursive; -->
 
     <!-- Contact -->
     <section id="contact"></section>
-
-    
-</body>
+  </body>
 </html>
